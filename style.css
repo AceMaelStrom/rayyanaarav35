@@ -1,0 +1,66 @@
+.title {
+	scale: 200%;
+	color: bisque;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	animation: wobbly 2s infinite alternate;
+	z-index: 999;
+}
+
+#img {
+	transition: 0.4s ease-in;
+	width: 40mm;
+	animation: pinny 0.5s infinite alternate;
+	border-radius: 5mm;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#img2 {
+	transition: 0.4s ease-in-out;
+	width: 40mm;
+	border-radius: 5mm;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+img:hover {
+	filter: brightness(300%) invert(100%);
+	z-index: 999;
+	scale: 500%;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ67FBsuCCiDSDDj4won4LXBugEh5rAxurO531so9QZQ&s=10");
+}
+
+@keyframes wobbly {
+	0% {transform: scaleX(300%) rotate(60deg);}
+	50% {transform: scaleX(50%) rotate(-50deg);}
+	100% {transform: scaleY(400%) scaleX(200%) rotate(250deg);}
+
+}
+
+@keyframes pinny {
+	0% {transform: scaleX(75%) rotate(60deg);}
+	50% {transform: rotate(-50deg);}
+
+}
+
+body {
+	background-image: url(https://media.licdn.com/dms/image/v2/D4D03AQFBqk7DzEDRag/profile-displayphoto-shrink_800_800/B4DZV9XB9sHIAg-/0/1741564944751?e=1794441600&v=beta&t=BCjvejnaDlR5ZkHDM5KNdEg1lE4nOLceM_zL2CXGxeY);
+	background-color: darkkhaki;
+	background-attachment: fixed;
+}
+
+#button {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	font-size: 50px;
+	background-color: aquamarine;
+	height: 600px;
+	width: 200px;
+
+}
